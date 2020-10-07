@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(235, 2, 2);
+    text-align: center;
+
+  }
+
+  img {
+    height: auto;
+    width: 50%;
+    opacity: 0.85;
+    padding-top: 2cm;
+  }
+
+  
+  div {
+    padding-top: 2cm;
+  }
