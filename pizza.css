@@ -4,14 +4,41 @@ body {
 
   }
 
-  img {
+  .header {
+    padding: 20px;
+    text-align: center;
+    background-color: tomato;
+  }
+  .header span {
+    text-align: right;
+    font-size: 15px;
+  }
+  
+  .horizontalpizza img {
+    width: 100%;
+  } 
+  .mainphotos img { 
     height: auto;
-    width: 50%;
+    width: 40%;
     opacity: 0.85;
     padding-top: 2cm;
+    align-items: center;
   }
 
+  .about {
+    column-count: 3; 
+    font-size: large;
+    align-items: auto; 
+    height: auto;
+    column-fill: auto;
+    column-gap: 30px;
+  }  
   
-  div {
+  p {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  
+  .video {
     padding-top: 2cm;
   }
