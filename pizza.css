@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(235, 2, 2);
+    background-color: rgb(235, 176, 14);
     text-align: center;
 
   }
@@ -26,20 +26,52 @@ body {
     align-items: center;
   }
 
+  div>h2 {
+    color: peachpuff;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+  }
+
+  article p {
+    font-size: large;
+    color: indigo;
+  }
+  
+  p+a {
+    font-style: italic;
+
+  }
+ 
   .about {
     column-count: 3; 
-    font-size: large;
     align-items: auto; 
     height: auto;
     column-fill: auto;
     column-gap: 30px;
   }  
   
-  p {
+  .aboutusp {
     margin-top: 0;
     margin-bottom: 1em;
   }
   
   .video {
     padding-top: 2cm;
+  }
+
+  a:link {
+    color: darkgreen;
+  }
+
+  a:visited {
+    color: darkslategray;
+  }
+
+  a:hover {
+    background-color: dodgerblue;
+  }
+
+  a:active {
+    background-color: fuchsia;
+
   }
