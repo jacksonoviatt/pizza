@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red;
+}
+
+header {
+  background-color: black;
+  height: 24vh;
+}
+
+header img {
+  height: 20vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 4vw;
+  float: left;
+}
+
+.right_header div button {
+  height: 10vh;
+  width: 20vw;
+  padding-top: 3vh;
+}
+
+.banner {
+  background-image: url(../media/tomato-pepper.png);
+  background-size: cover;
+  min-height: 32vh;
+  background-position: top center;
+  margin-bottom: 2rem;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: grey 2px 2px 2px;
+  position: absolute;
+  right: 10px;
+  top: 45vh;
+}
+
+.container {
+  max-width: 80vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+.container {
+  background-color: black;
+}
+
+.main_info_container {
+  max-width: 80vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+.main_info_container > div {
+  background-color: red;
+  margin: 1rem;
+  height: 200px;
+  width: 40vw;
+}
+
+.promo_header > div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.weekly_promo > .container div > p {
+  color: white;
+}
+
+.weekly_promo > .container div > h3 {
+  color: white;
+  text-shadow: red 2px 2px 2px;
+}
+
+.promo_body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'day deal';
+  grid-gap: 32vw;
+  padding: 1rem;
+}
+
+.day_of_week {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: day;
+}
+
+.daily_deal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: deal;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-color: rgb(224, 99, 99);
+    align-items: center;
+}
+
+header {
+    background-color: rgb(245, 245, 156);
+    height: 20vh;
+}
+
+.headergrid {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-template-areas: 'logo title hamburger';
+    grid-gap: 1rem;
+    padding-top: 2em;
+}
+
+@media only screen and (min-width:600px) {
+    .title > h1 { 
+        display: inline-block;
+        font-size: 3em;
+        padding-top: 15px;
+    }
+}
+    
+@media only screen and (min-width:1000px) {
+    .title > h1 { 
+        display: inline-block;
+        font-size: 4em;
+        padding-top: 15px;
+    }
+}
+
+
+.maininfo > div {
+    padding: 1rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width:600px) {
+    .maininfo > div { 
+        display: inline-block;
+        width: 20vw;
+    }
+}
+
+.maininfo1 img {
+    max-width: 100px;
+    align-items: center;
+    padding: 5px;
+  
+}
+
+.maininfo2 img {
+    max-width: 100px;
+    align-items: center;
+    padding: 5px;
+  
+}.maininfo3 img {
+    max-width: 100px;
+    align-items: center;
+    padding: 5px;
+  
+}
+
+@media only screen and (min-width:600px ) {
+    .maininfo1 img {
+        max-width: 150px;
+        align-items: center;
+        padding: 5px;
+    }
+    
+.maininfo2 img {
+    max-width: 150px;
+    align-items: center;
+    padding: 5px;
+      
+}
+.maininfo3 img {
+    max-width: 150px;
+    align-items: center;
+    padding: 5px;
+}
+
+.maininfo > div {
+        min-width: 170px;
+} 
+}
+
+
+@media only screen and (min-width:1000px ) {
+    .maininfo1 img {
+        max-width: 250px;
+        align-items: center;
+        padding: 5px;
+      
+    }
+    
+    .maininfo2 img {
+        max-width: 250px;
+        align-items: center;
+        padding: 5px;
+      
+    }
+    .maininfo3 img {
+        max-width: 250px;
+        align-items: center;
+        padding: 5px;
+      
+    }
+    .maininfo > div {
+        min-width: 260px;
+    }
+
+    }
+    .phonephoto > img {
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }}
+
+@media only screen and (max-width:600px){
+    .phonephoto > img {
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .phonephoto > img {
+        width: 60vw;
+    }
+}
+
+
+.container {
+    width: 300px;
+}
+
+
+.middle > div {
+    background-color: rgb(245, 245, 156);
+    margin-right: 23px;
+    margin-left: 23px;
+    width: 60vw;
+    padding: 5vw;
+    margin-top: 4vh;
+   
+}
+
+
+.weeklypromo > img {
+    height: 80px;
+    float: right;
+    padding: .5rem;
+}
+
+iframe {
+    width: 70vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+    height: 40px;
+}

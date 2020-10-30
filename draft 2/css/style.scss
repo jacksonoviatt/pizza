@@ -4,7 +4,7 @@
 }
 
 body { 
-    background-color: rgb(224, 99, 99);
+    background-color: yellow;
     align-items: center;
 }
 
@@ -20,6 +20,19 @@ header {
     grid-gap: 1rem;
     padding-top: 2em;
 }
+
+.logo {
+    grid-area: logo;
+}
+
+.title {
+    grid-area: title;
+}
+
+.hamburger {
+    grid-area: hamburger;
+}
+
 
 @media only screen and (min-width:600px) {
     .title > h1 { 
@@ -80,7 +93,6 @@ header {
         align-items: center;
         padding: 5px;
     }
-}
     
 .maininfo2 img {
     max-width: 150px;
@@ -96,7 +108,8 @@ header {
 
 .maininfo > div {
         min-width: 170px;
-} }
+} 
+}
 
 
 @media only screen and (min-width:1000px ) {
@@ -128,8 +141,7 @@ header {
         width: 80vw;
         margin-left: 10vw;
         margin-right: 10vw;
-    }
-}
+    }}
 
 @media only screen and (max-width:600px){
     .phonephoto > img {
