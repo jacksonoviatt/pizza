@@ -1,21 +1,26 @@
+$primarycolor: black;
+$secondcolor: red;
+$thirdcolor: rgb(195, 195, 195);
+$fourthcolor: white;
+
 * {
     margin: 0;
     padding: 0;
   }
   
   body {
-    background-color: red;
+    background-color: $thirdcolor;
   }
   
   header {
-    background-color: black;
-    height: 24vh;
+    background-color: $primarycolor;
+    height: 30vh;
   }
-  
-  header img {
-    height: 20vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+
+    img {
+      height: 20vh;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
     padding-left: 4vw;
     float: left;
   }
@@ -34,35 +39,40 @@
     margin-bottom: 2rem;
   
   }
-  
+
   a {
     color: black;
     font-weight: bold;
     font-size: 2rem;
     text-transform: uppercase;
-    text-shadow: grey 2px 2px 2px;
+    text-shadow: $thirdcolor 2px 2px 2px;
     position: absolute;
     right: 10px;
     top: 45vh;
   }
-  
-  .container {
-    max-width: 80vw;
-    margin: 10vw;
-  }
-  
-  .container {
-    background-color: black;
-    min-height: 100px;
-  }
-  
-  
 
-  .delivery {
+  .container {
+    width: 80vw;
+    margin: 8vw;
     background-color: $secondcolor;
-    margin: 1rem;
-    height: 200px;
-    width: 40vw;
+    min-height: 100px;
+    z-index: 1;
+    padding: 2vw;
+    
+  }
+
+  .maininfo {
+   border-style: ridge;
+   border-color: $primarycolor;
+   border-width: 5px;
+   margin: 1rem;
+   padding: 1rem;
+    
+   img {
+      width: 50vw;
+      align-self: center;
+      height: auto;
+    }
   }
   
   .promo_header > div {
@@ -74,7 +84,7 @@
     color: white;
   }
   
-  .weekly_promo > .container div > h3 {
+  .container div > h3 {
     color: white;
     text-shadow: red 2px 2px 2px;
   }
@@ -96,3 +106,22 @@
   .daily_deal {
     grid-area: deal;
   }
+
+  .about_us {
+    z-index: 2;
+
+
+
+    p {
+      color: $fourthcolor;
+      z-index: 3;
+    }
+  }
+
+  footer {
+    background-color: $primarycolor;
+    height: 10vh;
+  }
+
+
+@import '_tablet.scss';
