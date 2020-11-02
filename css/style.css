@@ -4,70 +4,85 @@
 }
 
 body {
-  background-color: #c3c3c3;
+  background-color: rgba(215, 4, 4, 0.9);
 }
 
 header {
   background-color: black;
-  height: 30vh;
+  height: 90px;
 }
 
 img {
-  height: 20vh;
+  height: 130px;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  padding-left: 4vw;
-  float: left;
+  padding-right: 4vw;
+  float: right;
 }
 
-.right_header div button {
-  height: 10vh;
-  width: 20vw;
-  padding-top: 3vh;
+.hamburger {
+  position: relative;
+  display: inline-block;
 }
 
 .banner {
-  background-image: url(../media/tomato-pepper.png);
+  background-image: url(../media/pastabanner.jpg);
   background-size: cover;
-  min-height: 32vh;
+  height: 135px;
   background-position: top center;
   margin-bottom: 2rem;
 }
 
-a {
+.phonebanner > a {
   color: black;
   font-weight: bold;
   font-size: 2rem;
   text-transform: uppercase;
-  text-shadow: #c3c3c3 2px 2px 2px;
+  text-shadow: grey 2px 2px 2px;
   position: absolute;
   right: 10px;
-  top: 45vh;
+  top: 150px;
 }
 
 .container {
   width: 80vw;
   margin: 8vw;
-  background-color: red;
   min-height: 100px;
   z-index: 1;
   padding: 2vw;
 }
 
-.maininfo {
-  border-style: ridge;
-  border-color: black;
-  border-width: 5px;
-  margin: 1rem;
-  padding: 1rem;
+.maininfo > div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.maininfo img {
-  width: 50vw;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  height: auto;
+.maininfo > div p {
+  color: white;
+  text-shadow: black 1px 1px 5px;
+}
+
+.maininfo > div h2 {
+  color: white;
+  text-shadow: rgba(215, 4, 4, 0.9) 2px 2px 2px;
+}
+
+.takeoutpic {
+  background-image: url(../media/takeoutpic.jpg);
+  background-size: cover;
+  height: 200px;
+}
+
+.dineinpic {
+  background-image: url(../media/dineinpic.jpg);
+  background-size: cover;
+  height: 200px;
+}
+
+.deliverypic {
+  background-image: url(../media/deluxedelivery.jpg);
+  background-size: cover;
+  height: 200px;
 }
 
 .promo_header > div {
@@ -85,7 +100,7 @@ a {
 
 .container div > h3 {
   color: white;
-  text-shadow: red 2px 2px 2px;
+  text-shadow: grey 2px 2px 2px;
 }
 
 .promo_body {
@@ -94,7 +109,7 @@ a {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'day deal';
-  grid-gap: 32vw;
+  grid-gap: 1rem;
   padding: 1rem;
 }
 
@@ -110,6 +125,16 @@ a {
   grid-area: deal;
 }
 
+.daily_deal > img {
+  width: 25vw;
+  height: auto;
+}
+
+.day_of_week > img {
+  width: 25vw;
+  height: auto;
+}
+
 .about_us {
   z-index: 2;
 }
@@ -122,5 +147,23 @@ a {
 footer {
   background-color: black;
   height: 10vh;
+}
+
+.menu_grid > div {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+p {
+  color: white;
+}
+
+h3 {
+  color: white;
+  text-shadow: grey;
+}
+
+h2 {
+  color: white;
+  text-shadow: grey;
 }
 /*# sourceMappingURL=style.css.map */
