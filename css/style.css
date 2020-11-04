@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgba(215, 4, 4, 0.9);
+  background-color: white;
 }
 
 header {
@@ -12,17 +12,26 @@ header {
   height: 90px;
 }
 
-img {
-  height: 130px;
+.logo img {
+  height: 100px;
   padding-top: 2vh;
   padding-bottom: 2vh;
   padding-right: 4vw;
-  float: right;
+  float: left;
 }
 
-.hamburger {
-  position: relative;
-  display: inline-block;
+.navigation {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  word-spacing: 20px;
+}
+
+.navigation a {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
 .banner {
@@ -30,7 +39,7 @@ img {
   background-size: cover;
   height: 135px;
   background-position: top center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .phonebanner > a {
@@ -38,15 +47,15 @@ img {
   font-weight: bold;
   font-size: 2rem;
   text-transform: uppercase;
-  text-shadow: grey 2px 2px 2px;
+  text-shadow: rgba(215, 4, 4, 0.9) 3px 3px 2px;
   position: absolute;
   right: 10px;
   top: 150px;
 }
 
 .container {
-  width: 80vw;
-  margin: 8vw;
+  width: 90vw;
+  margin: 4vw;
   min-height: 100px;
   z-index: 1;
   padding: 2vw;
@@ -55,11 +64,16 @@ img {
 .maininfo > div {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  height: 200px;
+  border-color: rgba(215, 4, 4, 0.9);
+  border-style: solid;
+  border-width: 2px;
+  padding: 1rem;
 }
 
 .maininfo > div p {
   color: white;
-  text-shadow: black 1px 1px 5px;
+  text-shadow: rgba(215, 4, 4, 0.9) 3px 1px 1.5px;
 }
 
 .maininfo > div h2 {
@@ -70,78 +84,123 @@ img {
 .takeoutpic {
   background-image: url(../media/takeoutpic.jpg);
   background-size: cover;
-  height: 200px;
 }
 
 .dineinpic {
-  background-image: url(../media/dineinpic.jpg);
+  background-image: url(../media/dineinfinal.jpg);
   background-size: cover;
-  height: 200px;
 }
 
 .deliverypic {
   background-image: url(../media/deluxedelivery.jpg);
   background-size: cover;
-  height: 200px;
 }
 
-.promo_header > div {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+.weekly_promo {
+  border: rgba(215, 4, 4, 0.9) solid 5px;
+  background-color: rgba(181, 181, 181, 0.5);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-.weekly_promo > .container div > p {
-  color: white;
+.promo_header {
+  text-align: center;
 }
 
-.container div > h3 {
-  color: white;
-  text-shadow: grey 2px 2px 2px;
+.speciala {
+  padding: 1em;
 }
 
-.promo_body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: 'day deal';
-  grid-gap: 1rem;
+.speciala img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 1em;
+}
+
+.speciala h4 {
+  padding-bottom: 10px;
+}
+
+.specialb {
+  padding: 1em;
+  padding-top: 0;
+}
+
+.specialb h4 {
+  padding-bottom: 10px;
+  float: left;
+}
+
+.specialb img {
+  height: 100px;
+  width: 120px;
+  float: right;
+}
+
+.specialc {
+  padding-top: 2em;
+  padding: 1em;
+}
+
+.specialc img {
+  height: 80px;
+  margin: 10px;
+  float: left;
+}
+
+.specialc h4 {
+  padding-bottom: 10px;
+}
+
+.reviews {
+  border: rgba(215, 4, 4, 0.9) solid 5px;
+  background-color: rgba(181, 181, 181, 0.5);
   padding: 1rem;
 }
 
-.day_of_week {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: day;
+.reviews_header {
+  text-align: center;
 }
 
-.daily_deal {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: deal;
+.checked {
+  color: goldenrod;
 }
 
-.daily_deal > img {
-  width: 25vw;
-  height: auto;
+.reviewa {
+  padding: 1em;
 }
 
-.day_of_week > img {
-  width: 25vw;
-  height: auto;
+.reviewa h4 {
+  padding-bottom: 10px;
 }
 
-.about_us {
-  z-index: 2;
+.reviewb {
+  padding: 1em;
+  padding-top: 0;
+}
+
+.reviewb h4 {
+  padding-bottom: 10px;
+  float: left;
+}
+
+.about_us h3 {
+  text-align: left;
+  margin-left: 2em;
+}
+
+.about_us img {
+  float: right;
+  height: 16vh;
+  margin: .5em;
+  margin-right: 0;
 }
 
 .about_us p {
-  color: white;
+  color: rgba(215, 4, 4, 0.9);
   z-index: 3;
+  margin: 1em;
 }
 
 footer {
@@ -154,16 +213,117 @@ footer {
 }
 
 p {
-  color: white;
+  color: rgba(215, 4, 4, 0.9);
+  font-family: 'Raleway', sans-serif;
 }
 
 h3 {
-  color: white;
-  text-shadow: grey;
+  color: rgba(215, 4, 4, 0.9);
+  text-shadow: rgba(181, 181, 181, 0.5);
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
-  color: white;
-  text-shadow: grey;
+  color: rgba(215, 4, 4, 0.9);
+  text-shadow: rgba(181, 181, 181, 0.5);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: rgba(215, 4, 4, 0.9);
+  text-shadow: rgba(181, 181, 181, 0.5);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  color: rgba(215, 4, 4, 0.9);
+  text-shadow: rgba(181, 181, 181, 0.5);
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    height: 200px;
+  }
+  .banner {
+    height: 270px;
+    margin-bottom: 0;
+  }
+  .logo img {
+    height: 250px;
+  }
+  .navigation {
+    position: absolute;
+    top: 125px;
+    right: 30px;
+    word-spacing: 40px;
+  }
+  .navigation a {
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+  .phonebanner > a {
+    top: 340px;
+    font-size: 4rem;
+    right: 40px;
+    pointer-events: none;
+  }
+  .maininfo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3, 1fr;
+        grid-template-columns: 3, 1fr;
+        grid-template-areas: 'takeout delivery dinein';
+    grid-gap: 1rem;
+    padding-top: 0;
+  }
+  .takeoutpic {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: takeout;
+    width: 30vw;
+  }
+  .deliverypic {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: delivery;
+    width: 30vw;
+  }
+  .dineinpic {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: dinein;
+    width: 30vw;
+  }
+  .center_grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2, 1fr;
+        grid-template-columns: 2, 1fr;
+        grid-template-areas: 'promo reviews';
+  }
+  .weekly_promo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: promo;
+    width: 40vw;
+    margin: 3.33333vw;
+    margin-right: 0;
+  }
+  .reviews {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: reviews;
+    width: 40vw;
+    margin: 3.33vw;
+  }
+  .about_us h3 {
+    font-size: 30px;
+  }
+  .about_us img {
+    height: 30vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

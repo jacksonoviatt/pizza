@@ -1,0 +1,88 @@
+@media only screen and (min-width: 600px) {
+    header {
+        height: 200px;
+    }
+    
+    .banner {
+        height: 270px;
+        margin-bottom: 0;
+    }
+
+    .logo img {
+        height: 250px;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 125px;
+        right: 30px;
+        word-spacing: 40px;
+        a {
+         font-size: 35px;
+         font-family: 'Raleway', sans-serif;
+         color: $fourthcolor;
+         text-decoration: none;
+            }
+        }
+
+    .phonebanner > a {
+        top: 340px;
+        font-size: 4rem;
+        right: 40px;
+        pointer-events: none;
+    }
+
+
+    .maininfo {
+        display: grid;
+        grid-template-columns: 3, 1fr;
+        grid-template-areas: 'takeout delivery dinein';
+        grid-gap: 1rem;
+        padding-top: 0;
+    
+    }
+
+    .takeoutpic {
+        grid-area: takeout;
+        width: 30vw;
+    }
+    .deliverypic {
+        grid-area: delivery;
+        width: 30vw;
+    }
+    .dineinpic {
+        grid-area: dinein;
+        width: 30vw;
+    }
+
+    .center_grid {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-areas: 'promo reviews';
+        
+    }
+
+    .weekly_promo {
+        grid-area: promo;
+        width: 40vw;
+       
+        margin: 3.33333vw;
+        margin-right: 0;
+    }
+    .reviews {
+        grid-area: reviews;
+        width: 40vw;
+
+        margin: 3.33vw;
+    }
+    
+    .about_us {
+        h3 {
+            font-size: 30px;
+        }
+        img {
+            height: 30vh;
+        }
+    }
+
+}
