@@ -12,6 +12,10 @@
         height: 250px;
     }
 
+    .container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     .navigation {
         position: absolute;
         top: 125px;
@@ -36,23 +40,26 @@
     .maininfo {
         display: grid;
         grid-template-columns: 3, 1fr;
-        grid-template-areas: 'takeout delivery dinein';
+        grid-template-areas: 'takeout dinein delivery';
         grid-gap: 1rem;
         padding-top: 0;
+        margin-left: 10px;
+        margin-right: 10px
+    
     
     }
 
     .takeoutpic {
         grid-area: takeout;
-        width: 30vw;
+       
     }
     .deliverypic {
         grid-area: delivery;
-        width: 30vw;
+        
     }
     .dineinpic {
         grid-area: dinein;
-        width: 30vw;
+       
     }
 
     .center_grid {
@@ -77,6 +84,7 @@
     }
     
     .about_us {
+
         h3 {
             font-size: 30px;
         }
@@ -85,4 +93,15 @@
         }
     }
 
+    .youtube {
+       h3 {
+           font-size: 30px;
+       }
+        iframe {
+          height: 315px;
+          width: 560px;
+          align-self: center;
+        }
+      }
 }
+

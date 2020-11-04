@@ -14,9 +14,8 @@ header {
 
 .logo img {
   height: 100px;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 4vw;
+  padding-top: 1rem;
+  padding: .5rem;
   float: left;
 }
 
@@ -203,13 +202,22 @@ header {
   margin: 1em;
 }
 
-footer {
-  background-color: black;
-  height: 10vh;
+.youtube iframe {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  width: 275px;
 }
 
-.menu_grid > div {
-  background-color: rgba(255, 0, 0, 0.5);
+.footer {
+  background-color: black;
+  height: 40px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.copyright p {
+  font-size: 1em;
+  color: white;
 }
 
 p {
@@ -252,6 +260,10 @@ h4 {
   .logo img {
     height: 250px;
   }
+  .container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .navigation {
     position: absolute;
     top: 125px;
@@ -275,27 +287,26 @@ h4 {
     display: grid;
     -ms-grid-columns: 3, 1fr;
         grid-template-columns: 3, 1fr;
-        grid-template-areas: 'takeout delivery dinein';
+        grid-template-areas: 'takeout dinein delivery';
     grid-gap: 1rem;
     padding-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .takeoutpic {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: takeout;
-    width: 30vw;
   }
   .deliverypic {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 3;
     grid-area: delivery;
-    width: 30vw;
   }
   .dineinpic {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     grid-area: dinein;
-    width: 30vw;
   }
   .center_grid {
     display: -ms-grid;
@@ -324,6 +335,16 @@ h4 {
   }
   .about_us img {
     height: 30vh;
+  }
+  .youtube h3 {
+    font-size: 30px;
+  }
+  .youtube iframe {
+    height: 315px;
+    width: 560px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

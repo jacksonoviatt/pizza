@@ -21,9 +21,8 @@ $fourthcolor: white;
 
     .logo img {
       height: 100px;
-      padding-top: 2vh;
-      padding-bottom: 2vh;
-    padding-right: 4vw;
+    padding-top: 1rem;
+      padding: .5rem;
     float: left;
   }
   
@@ -226,15 +225,33 @@ $fourthcolor: white;
       margin: 1em;
     }
   }
-
-  footer {
-    background-color: $primarycolor;
-    height: 10vh;
+.youtube {
+  iframe {
+   margin-top: .5rem;
+   margin-bottom: .5rem;
+    width: 275px;
   }
-
-.menu_grid > div {
-background-color: rgba($color: red, $alpha: .5);
 }
+
+  .footer {
+    background-color: $primarycolor;
+    height: 40px;
+    padding: 10px;
+    padding-top: 15px;
+  }
+  
+
+  .copyright {
+   
+  
+    p {
+      font-size: 1em;
+      color: $fourthcolor;
+   }
+  
+}
+
+
 
 p {
     color: $thirdcolor;
