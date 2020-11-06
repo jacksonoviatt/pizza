@@ -125,7 +125,7 @@ $fourthcolor: white;
 
 .weekly_promo {
   border: $thirdcolor solid 5px;
-  background-color: $secondcolor;
+  background-color: $fourthcolor;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -177,7 +177,7 @@ $fourthcolor: white;
 
   .reviews {
     border: $thirdcolor solid 5px;
-    background-color: $secondcolor;
+    background-color: $fourthcolor;
     padding: 1rem;
   }
   
@@ -250,6 +250,128 @@ $fourthcolor: white;
    }
   
 }
+
+
+.pizza_menu {
+ grid-area: pizzamenu;
+  border: $thirdcolor 3px solid;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr ;
+  grid-template-areas: 'pizza sm med lg';
+  grid-gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  div {
+    p { 
+      margin-bottom: 1rem;
+    }
+    h3 {margin-bottom: 1rem;}
+  }
+}
+
+.pizza_type {
+  grid-area: pizza;
+}
+
+.s_price {
+  grid-area: sm;
+}
+.m_price {
+  grid-area: med;
+}
+.l_price {
+  grid-area: lg;
+}
+ 
+
+.pasta_menu {
+  border: $thirdcolor 3px solid;
+  grid-area: pastamenu;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 'pasta_type pasta_price';
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  div {
+    p { 
+      margin-bottom: 1rem;
+    }
+    h3 {margin-bottom: 1rem;}
+  }
+  }
+
+
+.pasta_type {
+  grid-area: pasta_type;
+
+}
+
+.pasta_price {
+  grid-area: pasta_price;
+}
+
+.sides_menu {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 'pasta_type pasta_price';
+  grid-gap: 1rem;
+  padding: 1rem;
+  border: $thirdcolor 3px solid;
+  margin-bottom: 1rem;
+  div {
+    p { 
+      margin-bottom: 1rem;
+    }
+    h3 {margin-bottom: 1rem;}
+  }
+  }
+
+
+.sides_dishes {
+  grid-area: pasta_type;
+  width: 60vw;
+}
+
+.side_price {
+  grid-area: pasta_price;
+}
+
+.kids_menu {
+  padding: 1rem;
+  border: $thirdcolor 3px solid;
+  div {
+    p { 
+      margin-bottom: 1rem;
+    }
+    h3 {margin-bottom: 1rem;}
+  }
+  }
+
+  .pizzadropbtn {
+  background-color: $fourthcolor;
+  color: $thirdcolor;
+  border: none;
+  padding: 16px;
+  font-family: 'Raleway' 'sans-serif';
+  }
+  .pizza_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .pizzadropcontent {
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+  .pizza_dropdown:hover .pizzadropcontent {
+    display: block;
+  }
 
 
 
