@@ -103,5 +103,47 @@
           align-self: center;
         }
       }
+
+
+    .menu_grid {
+        display: grid;
+        grid-template-columns: 4, 1fr;
+        grid-template-areas: 
+        'zamenu_tablet zamenu_tablet zamenu_tablet menu_photo_a'
+        'pamenu_tablet pamenu_tablet simenu_tablet simenu_tablet'
+        'kimenu_tablet kimenu_tablet menu_photo_b menu_photo_b';
+        grid-gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .pizza_menu {
+        grid-area: zamenu_tablet;
+        height: 340px;
+    }
+    .menu_photo_a {
+        display: block;
+        grid-area: menu_photo_a;
+        img {
+            height: 400px;
+        }
+    }
+    .pasta_menu {
+        grid-area: pamenu_tablet;
+    }
+    .sides_menu {
+        grid-area: simenu_tablet;
+    }
+    .kids_menu {
+        grid-area: kimenu_tablet;
+    }
+    .menu_photo_b {
+        display: block;
+        grid-area: menu_photo_b;
+        img {
+            height: 210px;
+            margin-right: 0;
+        }
+    }
+
 }
 

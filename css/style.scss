@@ -262,9 +262,9 @@ $fourthcolor: white;
   margin-bottom: 1rem;
   div {
     p { 
-      margin-bottom: 30px;
+      margin-bottom: 1rem;
     }
-    h3 {margin-bottom: 20px;}
+    h3 {margin-bottom: 1rem;}
   }
 }
 
@@ -304,8 +304,6 @@ $fourthcolor: white;
 .pasta_type {
   grid-area: pasta_type;
  
-
-
 }
 
 .pasta_price {
@@ -315,7 +313,7 @@ $fourthcolor: white;
 .sides_menu {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-areas: 'pasta_type pasta_price';
+  grid-template-areas: 'sides_type sides_price';
   grid-gap: 1rem;
   padding: 1rem;
   border: $thirdcolor 3px solid;
@@ -328,17 +326,23 @@ $fourthcolor: white;
   }
   }
 
-
+.menu_photo_a {
+  display: none;
+}
 .sides_dishes {
-  grid-area: pasta_type;
+  grid-area: sides_type;
   width: 60vw;
 }
 
 .side_price {
-  grid-area: pasta_price;
+  grid-area: sides_price;
 }
 
 .kids_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'l_kids_menu r_kids_menu';
+  grid-gap: 1rem;
   padding: 1rem;
   border: $thirdcolor 3px solid;
   div {
@@ -348,7 +352,12 @@ $fourthcolor: white;
     h3 {margin-bottom: 1rem;}
   }
   }
-
+  .l_kids_menu {
+    grid-area: l_kids_menu;
+  }
+  .r_kids_menu {
+    grid-area: r_kids_menu;
+  }
  
    
   
