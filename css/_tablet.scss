@@ -69,16 +69,30 @@
         
     }
 
+
     .weekly_promo {
         grid-area: promo;
-        width: 40vw;
+        width: 80%;
        
         margin: 3.33333vw;
         margin-right: 0;
     }
+    .special {
+        grid-area: special;
+        img {
+        width: 20vw;
+        margin-bottom: 2rem;
+        
+       }
+      }
+    .special_description {
+       p {
+            margin-bottom: 3rem;
+       }
+    }
     .reviews {
         grid-area: reviews;
-        width: 40vw;
+        width: 80%;
 
         margin: 3.33vw;
     }
@@ -89,7 +103,7 @@
             font-size: 30px;
         }
         img {
-            height: 30vh;
+            height: 300px;
         }
     }
 
@@ -112,10 +126,11 @@
         'zamenu_tablet zamenu_tablet zamenu_tablet menu_photo_a'
         'pamenu_tablet pamenu_tablet simenu_tablet simenu_tablet'
         'kimenu_tablet kimenu_tablet menu_photo_b menu_photo_b';
-        grid-gap: 1rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        grid-gap: 1.5rem;
+        margin: 3rem;
     }
+
+   
     .pizza_menu {
         grid-area: zamenu_tablet;
         height: 340px;
@@ -144,6 +159,56 @@
             margin-right: 0;
         }
     }
+    .menu_photo_c {
+        display: none;
+    }
 
+    .location_grid {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-areas: 
+        'address hours_grid'
+        'googlemap googlemap'
+        'eximage eximage';
+        grid-gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+.address {
+    grid-area: address;
+    width: 300px;
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        margin-top: 2rem;
+    }
+    a {
+        color: $fourthcolor;
+        text-shadow: $primarycolor 2px 2px 2px;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.hours_grid {
+    grid-area: hours_grid;
+    p {
+        font-size: 24px;
+    }
+}
+.exterior_img {
+    grid-area: eximage;
+    width: 600px;
+}
+.googlemap {
+    grid-area: googlemap;
+   iframe{
+       width: 600px;
+   } 
+}
+h1 {
+    padding-left: 3rem;
+    padding-top: 1rem;
+  }
 }
 

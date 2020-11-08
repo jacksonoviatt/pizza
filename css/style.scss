@@ -69,23 +69,11 @@ $fourthcolor: white;
   }
 
   .container {
-    width: 90vw;
-    margin: 4vw;
-    min-height: 100px;
-    z-index: 1;
-    padding: 2vw;
+    
+    max-width: 1200px;
     
   }
 
-  
-    
-//    img {
-//       width: 50vw;
-//       align-self: center;
-//       height: auto;
-//     }
-//   }
-  
 
 .maininfo > div {
   margin-top: 1rem;
@@ -130,51 +118,64 @@ $fourthcolor: white;
   margin-bottom: 1rem;
 }
 .promo_header {
+  text-align: center;
+}
+.promo_body {
+  margin-top: 1rem;
   text-align: center; 
+ display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-areas: 
+  'speciala special2a'
+  'specialb special2b'
+  'specialc special2c';
   
 }
+
 
 .speciala {
-  padding: 1em;
+  grid-area: speciala;
   img {
-  height: 100px;
-  width: 100px;
-  float: left;
-  margin: 1em;
- }
- h4 {
-  padding-bottom: 10px;
-}
-}
-
-.specialb {
-  padding: 1em;
-  padding-top: 0;
-  h4 {
-    padding-bottom: 10px;
-    float: left;
-  }
-  img {
-    height: 100px;
-    width: 120px;
-    float: right;
-   }
-  }
-
-.specialc {
-  padding-top: 2em;
-  padding: 1em;
-  img {
-    height: 80px;
-   margin: 10px;
-    float: left;
-   }
-   h4 {
-    padding-bottom: 10px;
-  }
-  }
+  width: 120px;
+  margin-bottom: 2rem;
   
+ }
+}
+  .special_2a {
+    grid-area: special2a;
+   p {
+     margin: 1rem;
+   }
+  }  
+.specialb {
+    grid-area: specialb;
+    img {
+    width: 120px;
+    margin-bottom: 2rem;
+    
+   }
+  }
+    .special_2b {
+      grid-area: special2b;
+     p {
+       margin: 1rem;
+     }
+    }
 
+    .specialc {
+      grid-area: specialc;
+      img {
+      width: 120px;
+      margin-bottom: 2rem;
+      
+     }
+    }
+      .special_2c {
+        grid-area: special2c;
+       p {
+         margin: 1rem;
+       }
+      }
   .reviews {
     border: $thirdcolor solid 5px;
     background-color: $fourthcolor;
@@ -209,7 +210,9 @@ $fourthcolor: white;
   
   
     .about_us {
-    h3 {
+    margin: 2rem;
+    margin-bottom: 1rem;
+      h3 {
       text-align: left;
       margin-left: 2em;
     }
@@ -226,8 +229,11 @@ $fourthcolor: white;
     }
   }
 .youtube {
+  margin: 2rem;
+  align-items: center;
   iframe {
-   margin-top: .5rem;
+   
+    margin-top: .5rem;
    margin-bottom: .5rem;
     width: 275px;
   }
@@ -250,7 +256,9 @@ $fourthcolor: white;
    }
   
 }
-
+.menu_grid {
+  margin: .5rem;
+}
 .pizza_menu {
   grid-area: pizzamenu;
   border: $thirdcolor 3px solid;
@@ -329,6 +337,9 @@ $fourthcolor: white;
 .menu_photo_a {
   display: none;
 }
+.menu_photo_b {
+  display: none;
+}
 .sides_dishes {
   grid-area: sides_type;
   width: 60vw;
@@ -341,10 +352,13 @@ $fourthcolor: white;
 .kids_menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'l_kids_menu r_kids_menu';
+  grid-template-areas:
+  'l_kids_menu r_kids_menu'
+  'b_kids_menu b_kids_menu';
   grid-gap: 1rem;
   padding: 1rem;
   border: $thirdcolor 3px solid;
+  margin-bottom: 1rem;
   div {
     p { 
       margin-bottom: 1rem;
@@ -358,16 +372,16 @@ $fourthcolor: white;
   .r_kids_menu {
     grid-area: r_kids_menu;
   }
- 
-   
-  
+  .b_kids_menu {
+    grid-area: b_kids_menu;
+  }
   
    .menu_description {
      display: none;
      background-color: $thirdcolor;
      padding: 1rem;
-     margin-left: 90px;
-     margin-top: -20px;
+     margin-left: 5px;
+     margin-top: -10px;
      position: absolute;
      width: 40vw;
      img {
@@ -388,8 +402,66 @@ $fourthcolor: white;
        text-decoration: underline;
      }
    }
- 
+   .location_grid {
+     margin: 2rem;
+   }
+   .address {
+    background-color: $thirdcolor;
+     padding: .5rem;
+     width: 300px;
+     margin-bottom: 1rem;
+     h3 {
+      font-size: 2rem;
+      color: $fourthcolor;
+      text-shadow: $primarycolor 2px 2px 2px;
+    }
+    p {
+      margin-top: 2rem;
+      
+    }
+    a {
+      color: $fourthcolor;
+      text-shadow: $primarycolor 2px 2px 2px;
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+   }
+   
+   .hours_grid {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'weekday hours';
+    margin-bottom: 1rem;
+    p
+     {
+       margin: .5rem;
+       
+     }
+   }
+.weekday {
+  grid-area: weekday;
+}
+.hours {
+  grid-area: hours;
+}
 
+.exterior_img {
+  
+  img {
+    width: 80vw;
+    
+  }
+}
+.googlemap {
+  
+  margin: 1rem;
+  iframe {
+    width: 250px;
+    height: 300px;
+    border: solid 3px $thirdcolor;
+  }
+}
 p {
     color: $thirdcolor;
     font-family: 'Raleway', sans-serif;
@@ -411,6 +483,9 @@ h1 {
   color: $thirdcolor;
   text-shadow: $secondcolor;
   font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  margin-left: 1rem;
+
 }
 
 h4 {

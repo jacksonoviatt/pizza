@@ -1,12 +1,44 @@
 @media only screen and (min-width: 1000px) {
 
 
-span {
+  
+
+
+  span {
     p {
       text-decoration: none;
     }
   }
 
+  .pamenu_tablet {
+    padding-left: 0;
+    margin-left: 0;
+  
+  }
+  .menu_grid {
+    align-items: center;
+    max-width: 850px;
+  }
 
-
+  .location_grid {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    grid-template-areas: 
+    'address googlemap'
+    'hours_grid googlemap'
+    'eximage eximage';
+    grid-gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .googlemap {
+  iframe { 
+      height: 500px;
+      width: 580px;
+      }
+  }
+    
+  
 }
+
+
