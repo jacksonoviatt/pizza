@@ -10,6 +10,27 @@
     }
   }
 
+  .logo img {
+    height: 300px;
+    margin: 1rem;
+}
+ 
+  .navigation {
+    word-spacing: 70px;
+    margin-right: 80px;
+    a {
+      font-size: 50px;
+      
+    }
+  }
+  .youtube {
+    margin: 2rem;
+    iframe {
+      margin-left: 10vw;
+      width : 900px;
+      height: 550px;
+    }
+  }
   .pamenu_tablet {
     padding-left: 0;
     margin-left: 0;
@@ -27,15 +48,28 @@
     'address googlemap'
     'hours_grid googlemap'
     'eximage eximage';
-    grid-gap: 1.5rem;
-    margin-bottom: 1rem;
-  }
   
+  }
+  .address {
+    width: 400px;
+    h3 {
+      font-size: 40px;
+    }
+  }
   .googlemap {
+    display: block;
   iframe { 
-      height: 500px;
-      width: 580px;
+      height: 480px; 
+      width: 550px;
       }
+  }
+  .exterior_img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    img {
+      width: 970px;
+    }
   }
     
   

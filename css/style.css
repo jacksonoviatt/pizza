@@ -54,6 +54,8 @@ header {
 
 .container {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .maininfo > div {
@@ -121,6 +123,7 @@ header {
 .speciala img {
   width: 120px;
   margin-bottom: 2rem;
+  margin-top: .5rem;
 }
 
 .special_2a {
@@ -142,6 +145,7 @@ header {
 .specialb img {
   width: 120px;
   margin-bottom: 2rem;
+  margin-top: .5rem;
 }
 
 .special_2b {
@@ -163,6 +167,7 @@ header {
 .specialc img {
   width: 120px;
   margin-bottom: 2rem;
+  margin-top: .5rem;
 }
 
 .special_2c {
@@ -208,7 +213,7 @@ header {
 }
 
 .about_us {
-  margin: 2rem;
+  margin: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -220,18 +225,19 @@ header {
 .about_us img {
   float: right;
   height: 16vh;
-  margin: .5em;
+  margin: 1em;
   margin-right: 0;
 }
 
 .about_us p {
   color: rgba(215, 4, 4, 0.9);
   z-index: 3;
-  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .youtube {
-  margin: 2rem;
+  margin: 1.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -241,6 +247,21 @@ header {
   margin-top: .5rem;
   margin-bottom: .5rem;
   width: 275px;
+}
+
+.backtotop {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.backtotop a {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+.backtotop a:hover {
+  color: rgba(215, 4, 4, 0.9);
 }
 
 .footer {
@@ -449,37 +470,22 @@ span p {
 }
 
 .address {
-  background-color: rgba(215, 4, 4, 0.9);
-  padding: .5rem;
-  width: 300px;
-  margin-bottom: 1rem;
+  width: 270px;
+  margin-bottom: .5rem;
 }
 
 .address h3 {
   font-size: 2rem;
-  color: white;
-  text-shadow: black 2px 2px 2px;
-}
-
-.address p {
-  margin-top: 2rem;
-}
-
-.address a {
-  color: white;
-  text-shadow: black 2px 2px 2px;
-  font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
+  color: rgba(215, 4, 4, 0.9);
 }
 
 .hours_grid {
-  margin: 1rem;
+  margin-bottom: .5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'weekday hours';
-  margin-bottom: 1rem;
 }
 
 .hours_grid p {
@@ -498,18 +504,19 @@ span p {
   grid-area: hours;
 }
 
-.exterior_img img {
-  width: 80vw;
+.exterior_img {
+  margin-bottom: .5rem;
 }
 
-.googlemap {
-  margin: 1rem;
+.exterior_img img {
+  width: 270px;
+  border: rgba(215, 4, 4, 0.9) 4px solid;
 }
 
 .googlemap iframe {
-  width: 250px;
-  height: 300px;
-  border: solid 3px rgba(215, 4, 4, 0.9);
+  width: 270px;
+  height: 270px;
+  border: solid 4px rgba(215, 4, 4, 0.9);
 }
 
 p {
@@ -640,6 +647,9 @@ h4 {
   .about_us img {
     height: 300px;
   }
+  .youtube {
+    margin: 2rem;
+  }
   .youtube h3 {
     font-size: 30px;
   }
@@ -712,7 +722,7 @@ h4 {
     display: grid;
     -ms-grid-columns: 2, 1fr;
         grid-template-columns: 2, 1fr;
-        grid-template-areas: 'address hours_grid' 'googlemap googlemap' 'eximage eximage';
+        grid-template-areas: 'address hours_grid' 'eximage hours_grid' 'googlemap googlemap';
     grid-gap: 1.5rem;
     margin-bottom: 1rem;
   }
@@ -723,19 +733,18 @@ h4 {
     width: 300px;
   }
   .address h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .address p {
     margin-top: 2rem;
   }
   .address a {
-    color: white;
-    text-shadow: black 2px 2px 2px;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
   }
   .hours_grid {
     -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: hours_grid;
   }
@@ -743,23 +752,29 @@ h4 {
     font-size: 24px;
   }
   .exterior_img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: eximage;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .exterior_img img {
+    width: 300px;
+  }
+  .googlemap {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: eximage;
-    width: 600px;
-  }
-  .googlemap {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: googlemap;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .googlemap iframe {
     width: 600px;
   }
   h1 {
-    padding-left: 3rem;
     padding-top: 1rem;
   }
 }
@@ -767,6 +782,25 @@ h4 {
 @media only screen and (min-width: 1000px) {
   span p {
     text-decoration: none;
+  }
+  .logo img {
+    height: 300px;
+    margin: 1rem;
+  }
+  .navigation {
+    word-spacing: 70px;
+    margin-right: 80px;
+  }
+  .navigation a {
+    font-size: 50px;
+  }
+  .youtube {
+    margin: 2rem;
+  }
+  .youtube iframe {
+    margin-left: 10vw;
+    width: 900px;
+    height: 550px;
   }
   .pamenu_tablet {
     padding-left: 0;
@@ -784,12 +818,27 @@ h4 {
     -ms-grid-columns: 2, 1fr;
         grid-template-columns: 2, 1fr;
         grid-template-areas: 'address googlemap' 'hours_grid googlemap' 'eximage eximage';
-    grid-gap: 1.5rem;
-    margin-bottom: 1rem;
+  }
+  .address {
+    width: 400px;
+  }
+  .address h3 {
+    font-size: 40px;
+  }
+  .googlemap {
+    display: block;
   }
   .googlemap iframe {
-    height: 500px;
-    width: 580px;
+    height: 480px;
+    width: 550px;
+  }
+  .exterior_img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .exterior_img img {
+    width: 970px;
   }
 }
 /*# sourceMappingURL=style.css.map */

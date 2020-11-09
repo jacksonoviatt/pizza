@@ -17,6 +17,7 @@ $fourthcolor: white;
   header {
     background-color: $primarycolor;
     height: 90px;
+   
   }
 
     .logo img {
@@ -71,7 +72,8 @@ $fourthcolor: white;
   .container {
     
     max-width: 1200px;
-    
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
@@ -138,6 +140,7 @@ $fourthcolor: white;
   img {
   width: 120px;
   margin-bottom: 2rem;
+  margin-top: .5rem;
   
  }
 }
@@ -152,6 +155,7 @@ $fourthcolor: white;
     img {
     width: 120px;
     margin-bottom: 2rem;
+    margin-top: .5rem;
     
    }
   }
@@ -167,6 +171,7 @@ $fourthcolor: white;
       img {
       width: 120px;
       margin-bottom: 2rem;
+      margin-top: .5rem;
       
      }
     }
@@ -210,7 +215,7 @@ $fourthcolor: white;
   
   
     .about_us {
-    margin: 2rem;
+    margin: 1.5rem;
     margin-bottom: 1rem;
       h3 {
       text-align: left;
@@ -219,18 +224,20 @@ $fourthcolor: white;
     img {
       float: right;
       height: 16vh;
-      margin: .5em;
+     margin: 1em;
       margin-right: 0;
     }
     p {
       color: $thirdcolor;
       z-index: 3;
-      margin: 1em;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
   }
 .youtube {
-  margin: 2rem;
+  margin: 1.5rem;
   align-items: center;
+ 
   iframe {
    
     margin-top: .5rem;
@@ -238,6 +245,19 @@ $fourthcolor: white;
     width: 275px;
   }
 }
+.backtotop {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  
+    a {
+      font-family: 'Raleway', sans-serif;
+      color: $primarycolor;
+    } 
+    a:hover {
+      color: $thirdcolor;
+    }
+  }
 
   .footer {
     background-color: $primarycolor;
@@ -405,34 +425,22 @@ $fourthcolor: white;
    .location_grid {
      margin: 2rem;
    }
-   .address {
-    background-color: $thirdcolor;
-     padding: .5rem;
-     width: 300px;
-     margin-bottom: 1rem;
+   .address { 
+    width: 270px; 
+    margin-bottom: .5rem;
      h3 {
       font-size: 2rem;
-      color: $fourthcolor;
-      text-shadow: $primarycolor 2px 2px 2px;
-    }
-    p {
-      margin-top: 2rem;
-      
-    }
-    a {
-      color: $fourthcolor;
-      text-shadow: $primarycolor 2px 2px 2px;
-      font-size: 30px;
-      font-family: 'Montserrat', sans-serif;
+      color: $thirdcolor;
+      // text-shadow: $primarycolor 2px 2px 2px;
     }
    }
    
    .hours_grid {
-    margin: 1rem;
+    margin-bottom: .5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'weekday hours';
-    margin-bottom: 1rem;
+    
     p
      {
        margin: .5rem;
@@ -445,21 +453,21 @@ $fourthcolor: white;
 .hours {
   grid-area: hours;
 }
-
 .exterior_img {
-  
+
+ margin-bottom: .5rem;
   img {
-    width: 80vw;
-    
+    width: 270px;
+    border: $thirdcolor 4px solid;
   }
 }
 .googlemap {
   
-  margin: 1rem;
+  
   iframe {
-    width: 250px;
-    height: 300px;
-    border: solid 3px $thirdcolor;
+    width: 270px;
+    height: 270px;
+    border: solid 4px $thirdcolor;
   }
 }
 p {
