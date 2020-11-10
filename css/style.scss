@@ -1,81 +1,100 @@
 $primarycolor: black;
-$thirdcolor: rgba(215, 4, 4, .9);
-$secondcolor: rgba(181, 181, 181, .5);
+$thirdcolor: rgba(215, 4, 4, 0.9);
+$secondcolor: rgba(181, 181, 181, 0.5);
 $fourthcolor: white;
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
- 
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    background-color: $fourthcolor;
-  }
-  
-  header {
-    background-color: $primarycolor;
-    height: 90px;
-   
-  }
+p {
+  color: $thirdcolor;
+  font-family: "Raleway", sans-serif;
+}
 
-    .logo img {
-      height: 100px;
-    padding-top: 1rem;
-      padding: .5rem;
-    float: left;
-  }
-  
+h3 {
+  color: $thirdcolor;
+  text-shadow: $secondcolor;
+  font-family: "Montserrat", sans-serif;
+}
 
-  .navigation {
-    position: absolute;
-    top: 50px;
-    right: 15px;
-    word-spacing: 20px;
-    a {
-     font-size: 20px;
-     font-family: 'Raleway', sans-serif;
-     color: $fourthcolor;
-     text-decoration: none;
-        }
+h2 {
+  color: $thirdcolor;
+  text-shadow: $secondcolor;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: $thirdcolor;
+  text-shadow: $secondcolor;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+
+h4 {
+  color: $thirdcolor;
+  text-shadow: $secondcolor;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: $fourthcolor;
+}
+
+header {
+  background-color: $primarycolor;
+  height: 90px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo img {
+  height: 100px;
+  padding-top: 1rem;
+  padding: 0.5rem;
+  float: left;
+}
+
+.navigation {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  word-spacing: 20px;
+  a {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    color: $fourthcolor;
+    text-decoration: none;
+    &:hover {
+      color: $thirdcolor;
     }
-  
-//   #ham {
-//       background-color: $secondcolor;
-//       color: $primarycolor;
-     
-//   }
-
-  
-  .banner {
-    background-image: url(../media/pastabanner.jpg);
-    background-size: cover;
-    height: 135px;
-    background-position: top center;
-    margin-bottom: 1rem;
-
-  
   }
+}
+
+.banner {
+  background-image: url(../media/pastabanner.jpg);
+  background-size: cover;
+  height: 135px;
+  background-position: top center;
+  margin-bottom: 1rem;
+}
 
 .phonebanner > a {
-    color: $primarycolor;
-    font-weight: bold;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-shadow: $thirdcolor 3px 3px 2px;
-    position: absolute;
-    right: 10px;
-    top: 150px;
-  }
-
-  .container {
-    
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+  color: $primarycolor;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: $thirdcolor 3px 3px 2px;
+  position: absolute;
+  right: 10px;
+  top: 150px;
+}
 
 .maininfo > div {
   margin-top: 1rem;
@@ -85,12 +104,10 @@ $fourthcolor: white;
   border-style: solid;
   border-width: 2px;
   padding: 1rem;
- 
   p {
     color: $fourthcolor;
     text-shadow: $thirdcolor 3px 1px 1.5px;
   }
-
   h2 {
     color: $fourthcolor;
     text-shadow: $thirdcolor 2px 2px 2px;
@@ -100,12 +117,11 @@ $fourthcolor: white;
 .takeoutpic {
   background-image: url(../media/takeoutpic.jpg);
   background-size: cover;
-
 }
 
 .dineinpic {
-    background-image: url(../media/dineinfinal.jpg);
-    background-size: cover;
+  background-image: url(../media/dineinfinal.jpg);
+  background-size: cover;
 }
 
 .deliverypic {
@@ -119,219 +135,220 @@ $fourthcolor: white;
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
 .promo_header {
   text-align: center;
 }
+
 .promo_body {
   margin-top: 1rem;
-  text-align: center; 
- display: grid;
+  text-align: center;
+  display: grid;
   grid-template-columns: 2, 1fr;
-  grid-template-areas: 
-  'speciala special2a'
-  'specialb special2b'
-  'specialc special2c';
-  
+  grid-template-areas:
+    "speciala special2a"
+    "specialb special2b"
+    "specialc special2c";
 }
-
 
 .speciala {
   grid-area: speciala;
   img {
-  width: 120px;
-  margin-bottom: 2rem;
-  margin-top: .5rem;
-  
- }
-}
-  .special_2a {
-    grid-area: special2a;
-   p {
-     margin: 1rem;
-   }
-  }  
-.specialb {
-    grid-area: specialb;
-    img {
     width: 120px;
     margin-bottom: 2rem;
-    margin-top: .5rem;
-    
-   }
-  }
-    .special_2b {
-      grid-area: special2b;
-     p {
-       margin: 1rem;
-     }
-    }
-
-    .specialc {
-      grid-area: specialc;
-      img {
-      width: 120px;
-      margin-bottom: 2rem;
-      margin-top: .5rem;
-      
-     }
-    }
-      .special_2c {
-        grid-area: special2c;
-       p {
-         margin: 1rem;
-       }
-      }
-  .reviews {
-    border: $thirdcolor solid 5px;
-    background-color: $fourthcolor;
-    padding: 1rem;
-  }
-  
-  .reviews_header {
-    text-align: center; 
-    
-  }
-  
-  .checked {
-    color: goldenrod;
-  }
-  .reviewa {
-    padding: 1em;
-  
-   h4 {
-    padding-bottom: 10px;
-  }
-  }
-  
-  .reviewb {
-    padding: 1em;
-    padding-top: 0;
-    h4 {
-      padding-bottom: 10px;
-      float: left;
-    
-    } 
-  }
-  
-  
-    .about_us {
-    margin: 1.5rem;
-    margin-bottom: 1rem;
-      h3 {
-      text-align: left;
-      margin-left: 2em;
-    }
-    img {
-      float: right;
-      height: 16vh;
-     margin: 1em;
-      margin-right: 0;
-    }
-    p {
-      color: $thirdcolor;
-      z-index: 3;
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-  }
-.youtube {
-  margin: 1.5rem;
-  align-items: center;
- 
-  iframe {
-   
-    margin-top: .5rem;
-   margin-bottom: .5rem;
-    width: 275px;
+    margin-top: 0.5rem;
   }
 }
+
+.special_2a {
+  grid-area: special2a;
+  p {
+    margin: 1rem;
+  }
+}
+
+.specialb {
+  grid-area: specialb;
+  img {
+    width: 120px;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.special_2b {
+  grid-area: special2b;
+  p {
+    margin: 1rem;
+  }
+}
+
+.specialc {
+  grid-area: specialc;
+  img {
+    width: 120px;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.special_2c {
+  grid-area: special2c;
+  p {
+    margin: 1rem;
+  }
+}
+
+.reviews {
+  border: $thirdcolor solid 5px;
+  background-color: $fourthcolor;
+  padding: 1rem;
+}
+
+.reviews_header {
+  text-align: center;
+}
+
+.checked {
+  color: goldenrod;
+}
+
+.reviewa {
+  padding: 1em;
+  h4 {
+    padding-bottom: 10px;
+  }
+}
+
+.reviewb {
+  padding: 1em;
+  padding-top: 0;
+  h4 {
+    padding-bottom: 10px;
+    float: left;
+  }
+}
+
+.about_us {
+  margin: 1.5rem;
+  margin-bottom: 1rem;
+  h3 {
+    text-align: left;
+  }
+  img {
+    float: right;
+    height: 16vh;
+    margin: 1em;
+    margin-right: 0;
+  }
+  p {
+    color: $thirdcolor;
+    z-index: 3;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.youtube {
+  margin: 1.5rem;
+}
+.youtube_video {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+  iframe {
+    margin: 0 auto;
+    height: 157.5px;
+    width: 280px;
+  }
+}
+
 .backtotop {
   text-align: center;
   font-size: 18px;
   margin-bottom: 1rem;
-  
-    a {
-      font-family: 'Raleway', sans-serif;
-      color: $primarycolor;
-    } 
-    a:hover {
-      color: $thirdcolor;
-    }
+  a {
+    font-family: "Raleway", sans-serif;
+    color: $primarycolor;
   }
-
-  .footer {
-    background-color: $primarycolor;
-    height: 40px;
-    padding: 10px;
-    padding-top: 15px;
+  a:hover {
+    color: $thirdcolor;
   }
-  
-
-  .copyright {
-   
-  
-    p {
-      font-size: 1em;
-      color: $fourthcolor;
-   }
-  
 }
+
+.footer {
+  background-color: $primarycolor;
+  height: 40px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.copyright {
+  p {
+    font-size: 1em;
+    color: $fourthcolor;
+  }
+}
+
 .menu_grid {
-  margin: .5rem;
+  margin: 0.5rem;
 }
+
 .pizza_menu {
   grid-area: pizzamenu;
   border: $thirdcolor 3px solid;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr ;
-  grid-template-areas: 'pizza sm med lg';
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-areas: "pizza sm med lg";
   grid-gap: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
   div {
-    p { 
+    p {
       margin-bottom: 1rem;
     }
-    h3 {margin-bottom: 1rem;}
+    h3 {
+      margin-bottom: 1rem;
+    }
   }
 }
 
 .pizza_type {
   grid-area: pizza;
-
 }
 
 .s_price {
   grid-area: sm;
 }
+
 .m_price {
   grid-area: med;
 }
+
 .l_price {
   grid-area: lg;
 }
- 
 
 .pasta_menu {
   border: $thirdcolor 3px solid;
   grid-area: pastamenu;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-areas: 'pasta_type pasta_price';
+  grid-template-areas: "pasta_type pasta_price";
   padding: 1rem;
   margin-bottom: 1rem;
-
   div {
-    p { 
+    p {
       margin-bottom: 1rem;
     }
-    h3 {margin-bottom: 1rem;}
+    h3 {
+      margin-bottom: 1rem;
+    }
   }
-  }
+}
 
 .pasta_type {
   grid-area: pasta_type;
- 
 }
 
 .pasta_price {
@@ -341,25 +358,29 @@ $fourthcolor: white;
 .sides_menu {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-areas: 'sides_type sides_price';
+  grid-template-areas: "sides_type sides_price";
   grid-gap: 1rem;
   padding: 1rem;
   border: $thirdcolor 3px solid;
   margin-bottom: 1rem;
   div {
-    p { 
+    p {
       margin-bottom: 1rem;
     }
-    h3 {margin-bottom: 1rem;}
+    h3 {
+      margin-bottom: 1rem;
+    }
   }
-  }
+}
 
 .menu_photo_a {
   display: none;
 }
+
 .menu_photo_b {
   display: none;
 }
+
 .sides_dishes {
   grid-area: sides_type;
   width: 60vw;
@@ -373,134 +394,108 @@ $fourthcolor: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  'l_kids_menu r_kids_menu'
-  'b_kids_menu b_kids_menu';
+    "l_kids_menu r_kids_menu"
+    "b_kids_menu b_kids_menu";
   grid-gap: 1rem;
   padding: 1rem;
   border: $thirdcolor 3px solid;
   margin-bottom: 1rem;
   div {
-    p { 
+    p {
       margin-bottom: 1rem;
     }
-    h3 {margin-bottom: 1rem;}
-  }
-  }
-  .l_kids_menu {
-    grid-area: l_kids_menu;
-  }
-  .r_kids_menu {
-    grid-area: r_kids_menu;
-  }
-  .b_kids_menu {
-    grid-area: b_kids_menu;
-  }
-  
-   .menu_description {
-     display: none;
-     background-color: $thirdcolor;
-     padding: 1rem;
-     margin-left: 5px;
-     margin-top: -10px;
-     position: absolute;
-     width: 40vw;
-     img {
-       width: 30vw;
-     }
-     p {
-       color: $fourthcolor;
-       margin: 0;
-       font-size: 12px;
-     }
-   }
-   span:hover + .menu_description {
-     display: block;
-   }
-
-   span {
-     p {
-       text-decoration: underline;
-     }
-   }
-   .location_grid {
-     margin: 2rem;
-   }
-   .address { 
-    width: 270px; 
-    margin-bottom: .5rem;
-     h3 {
-      font-size: 2rem;
-      color: $thirdcolor;
-      // text-shadow: $primarycolor 2px 2px 2px;
+    h3 {
+      margin-bottom: 1rem;
     }
-   }
-   
-   .hours_grid {
-    margin-bottom: .5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'weekday hours';
-    
-    p
-     {
-       margin: .5rem;
-       
-     }
-   }
+  }
+}
+
+.l_kids_menu {
+  grid-area: l_kids_menu;
+}
+
+.r_kids_menu {
+  grid-area: r_kids_menu;
+}
+
+.b_kids_menu {
+  grid-area: b_kids_menu;
+}
+
+.menu_description {
+  display: none;
+  background-color: $thirdcolor;
+  padding: 1rem;
+  margin-left: 5px;
+  margin-top: -10px;
+  position: absolute;
+  width: 40vw;
+  img {
+    width: 30vw;
+  }
+  p {
+    color: $fourthcolor;
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+span:hover + .menu_description {
+  display: block;
+}
+
+span {
+  p {
+    text-decoration: underline;
+  }
+}
+
+.location_grid {
+  margin: 2rem;
+}
+
+.address {
+  width: 270px;
+  margin-bottom: 0.5rem;
+  h3 {
+    font-size: 2rem;
+    color: $thirdcolor;
+  }
+}
+
+.hours_grid {
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "weekday hours";
+  p {
+    margin: 0.5rem;
+  }
+}
+
 .weekday {
   grid-area: weekday;
 }
+
 .hours {
   grid-area: hours;
 }
-.exterior_img {
 
- margin-bottom: .5rem;
+.exterior_img {
+  margin-bottom: 0.5rem;
   img {
     width: 270px;
     border: $thirdcolor 4px solid;
   }
 }
+
 .googlemap {
-  
-  
   iframe {
     width: 270px;
     height: 270px;
     border: solid 4px $thirdcolor;
   }
 }
-p {
-    color: $thirdcolor;
-    font-family: 'Raleway', sans-serif;
-}
 
-h3 {
-    color: $thirdcolor;
-    text-shadow: $secondcolor;
-    font-family: 'Montserrat', sans-serif;
-}
-
-h2 { 
-    color: $thirdcolor;
-    text-shadow: $secondcolor;
-    font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-  color: $thirdcolor;
-  text-shadow: $secondcolor;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
-  margin-left: 1rem;
-
-}
-
-h4 {
-  color: $thirdcolor;
-  text-shadow: $secondcolor;
-  font-family: 'Montserrat', sans-serif;
-}
-
-@import '_tablet.scss';
-@import '_desktop.scss';
+@import "_tablet.scss";
+@import "_desktop.scss";

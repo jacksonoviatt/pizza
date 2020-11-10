@@ -2,103 +2,96 @@
     header {
         height: 200px;
     }
-    
+
     .banner {
         height: 270px;
         margin-bottom: 0;
     }
 
     .logo img {
-        height: 250px;
+        height: 230px;
+        margin: 1rem;
     }
 
     .container {
         margin-top: 0;
         margin-bottom: 0;
     }
+
     .navigation {
         position: absolute;
         top: 125px;
         right: 30px;
         word-spacing: 40px;
         a {
-         font-size: 35px;
-         font-family: 'Raleway', sans-serif;
-         color: $fourthcolor;
-         text-decoration: none;
-            }
+            font-size: 35px;
+            font-family: "Raleway", sans-serif;
+            color: $fourthcolor;
+            text-decoration: none;
         }
+    }
 
     .phonebanner > a {
         top: 340px;
         font-size: 4rem;
         right: 40px;
         pointer-events: none;
+        text-decoration: none;
     }
-
 
     .maininfo {
         display: grid;
         grid-template-columns: 3, 1fr;
-        grid-template-areas: 'takeout dinein delivery';
+        grid-template-areas: "takeout dinein delivery";
         grid-gap: 1rem;
         padding-top: 0;
         margin-left: 10px;
-        margin-right: 10px
-    
-    
+        margin-right: 10px;
     }
 
     .takeoutpic {
         grid-area: takeout;
-       
     }
     .deliverypic {
         grid-area: delivery;
-        
     }
     .dineinpic {
         grid-area: dinein;
-       
     }
 
     .center_grid {
         display: grid;
         grid-template-columns: 2, 1fr;
-        grid-template-areas: 'promo reviews';
-        
+        grid-template-areas: "promo reviews";
     }
-
 
     .weekly_promo {
         grid-area: promo;
-        width: 80%;
-       
+        width: 230px;
+
         margin: 3.33333vw;
         margin-right: 0;
     }
+
     .special {
         grid-area: special;
         img {
-        width: 20vw;
-        margin-bottom: 2rem;
-        
-       }
-      }
+            width: 20vw;
+            margin-bottom: 2rem;
+        }
+    }
     .special_description {
-       p {
+        p {
             margin-bottom: 3rem;
-       }
+        }
     }
     .reviews {
         grid-area: reviews;
-        width: 80%;
-
+        width: 230px;
         margin: 3.33vw;
     }
-    
-    .about_us {
 
+    .about_us {
         h3 {
             font-size: 30px;
         }
@@ -108,34 +101,96 @@
     }
 
     .youtube {
-    margin: 2rem;   
-     h3 {
-           font-size: 30px;
-       }
-        iframe {
-          height: 315px;
-          width: 560px;
-          align-self: center;
+        margin: 2rem;
+        h3 {
+            font-size: 30px;
         }
-      }
+        .youtube_video {
+            margin: 1rem;
+            iframe {
+                height: 315px;
+                width: 560px;
+            }
+        }
+    }
 
+    .location_grid {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-areas:
+            "address hours_grid"
+            "eximage hours_grid"
+            "googlemap googlemap";
+        grid-gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .address {
+        grid-area: address;
+        width: 300px;
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            margin-top: 2rem;
+        }
+        a {
+            font-size: 30px;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+    .hours_grid {
+        grid-area: hours_grid;
+        p {
+            font-size: 24px;
+        }
+    }
+    .exterior_img {
+        grid-area: eximage;
+        align-items: center;
+        img {
+            width: 300px;
+        }
+    }
+    .googlemap {
+        grid-area: googlemap;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        iframe {
+            width: 600px;
+        }
+    }
+    h1 {
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .weekly_promo {
+        width: 300px;
+    }
+
+    .reviews {
+        width: 300px;
+    }
 
     .menu_grid {
         display: grid;
         grid-template-columns: 4, 1fr;
-        grid-template-areas: 
-        'zamenu_tablet zamenu_tablet zamenu_tablet menu_photo_a'
-        'pamenu_tablet pamenu_tablet simenu_tablet simenu_tablet'
-        'kimenu_tablet kimenu_tablet menu_photo_b menu_photo_b';
+        grid-template-areas:
+            "zamenu_tablet zamenu_tablet zamenu_tablet menu_photo_a"
+            "pamenu_tablet pamenu_tablet simenu_tablet simenu_tablet"
+            "kimenu_tablet kimenu_tablet menu_photo_b menu_photo_b";
         grid-gap: 1.5rem;
         margin: 3rem;
     }
 
-   
     .pizza_menu {
         grid-area: zamenu_tablet;
         height: 340px;
     }
+
     .menu_photo_a {
         display: block;
         grid-area: menu_photo_a;
@@ -143,15 +198,19 @@
             height: 400px;
         }
     }
+
     .pasta_menu {
         grid-area: pamenu_tablet;
     }
+
     .sides_menu {
         grid-area: simenu_tablet;
     }
+
     .kids_menu {
         grid-area: kimenu_tablet;
     }
+
     .menu_photo_b {
         display: block;
         grid-area: menu_photo_b;
@@ -160,62 +219,4 @@
             margin-right: 0;
         }
     }
-    .menu_photo_c {
-        display: none;
-    }
-
-    .location_grid {
-        display: grid;
-        grid-template-columns: 2, 1fr;
-        grid-template-areas: 
-        'address hours_grid'
-        'eximage hours_grid'
-        'googlemap googlemap'
-        ;
-        grid-gap: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-.address {
-    grid-area: address;
-    width: 300px;
-    h3 {
-        font-size: 1.5rem;
-    }
-    p {
-        margin-top: 2rem;
-    }
-    a {
-        font-size: 30px;
-        font-family: 'Montserrat', sans-serif;
-    }
 }
-.hours_grid {
-    grid-area: hours_grid;
-    p {
-        font-size: 24px;
-    }
-}
-.exterior_img {
-    grid-area: eximage;
-    align-items: center;
-        img {
-          width: 300px;
-        }
-      
-}
-.googlemap {
-    grid-area: googlemap;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-   iframe{
-   width: 600px;
-   } 
-}
-h1 {
-    
-    padding-top: 1rem;
-  }
-}
-

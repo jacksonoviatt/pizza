@@ -1,9 +1,4 @@
 @media only screen and (min-width: 1000px) {
-
-
-  
-
-
   span {
     p {
       text-decoration: none;
@@ -11,31 +6,40 @@
   }
 
   .logo img {
-    height: 300px;
-    margin: 1rem;
-}
- 
+    height: 270px;
+  }
+
   .navigation {
     word-spacing: 70px;
-    margin-right: 80px;
+    margin-right: 40px;
     a {
       font-size: 50px;
-      
     }
   }
+
+  .weekly_promo {
+    width: 400px;
+  }
+
+  .reviews {
+    width: 400px;
+  }
+
+
   .youtube {
-    margin: 2rem;
-    iframe {
-      margin-left: 10vw;
-      width : 900px;
-      height: 550px;
+    .youtube_video {
+        iframe {
+            height: 550px;
+            width: 900px;
+        }
     }
-  }
+}
+
   .pamenu_tablet {
     padding-left: 0;
     margin-left: 0;
-  
   }
+
   .menu_grid {
     align-items: center;
     max-width: 850px;
@@ -44,25 +48,27 @@
   .location_grid {
     display: grid;
     grid-template-columns: 2, 1fr;
-    grid-template-areas: 
-    'address googlemap'
-    'hours_grid googlemap'
-    'eximage eximage';
-  
+    grid-template-areas:
+      "address googlemap"
+      "hours_grid googlemap"
+      "eximage eximage";
   }
+
   .address {
     width: 400px;
     h3 {
       font-size: 40px;
     }
   }
+
   .googlemap {
     display: block;
-  iframe { 
-      height: 480px; 
+    iframe {
+      height: 480px;
       width: 550px;
-      }
+    }
   }
+
   .exterior_img {
     margin-left: auto;
     margin-right: auto;
@@ -71,8 +77,4 @@
       width: 970px;
     }
   }
-    
-  
 }
-
-

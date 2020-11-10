@@ -3,6 +3,37 @@
   padding: 0;
 }
 
+p {
+  color: rgba(215, 4, 4, 0.9);
+  font-family: "Raleway", sans-serif;
+}
+
+h3 {
+  color: rgba(215, 4, 4, 0.9);
+  text-shadow: rgba(181, 181, 181, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: rgba(215, 4, 4, 0.9);
+  text-shadow: rgba(181, 181, 181, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: rgba(215, 4, 4, 0.9);
+  text-shadow: rgba(181, 181, 181, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+
+h4 {
+  color: rgba(215, 4, 4, 0.9);
+  text-shadow: rgba(181, 181, 181, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   background-color: white;
 }
@@ -12,10 +43,16 @@ header {
   height: 90px;
 }
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo img {
   height: 100px;
   padding-top: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   float: left;
 }
 
@@ -28,9 +65,13 @@ header {
 
 .navigation a {
   font-size: 20px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   text-decoration: none;
+}
+
+.navigation a:hover {
+  color: rgba(215, 4, 4, 0.9);
 }
 
 .banner {
@@ -50,12 +91,6 @@ header {
   position: absolute;
   right: 10px;
   top: 150px;
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .maininfo > div {
@@ -111,7 +146,7 @@ header {
   display: grid;
   -ms-grid-columns: 2, 1fr;
       grid-template-columns: 2, 1fr;
-      grid-template-areas: 'speciala special2a' 'specialb special2b' 'specialc special2c';
+      grid-template-areas: "speciala special2a" "specialb special2b" "specialc special2c";
 }
 
 .speciala {
@@ -123,7 +158,7 @@ header {
 .speciala img {
   width: 120px;
   margin-bottom: 2rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .special_2a {
@@ -145,7 +180,7 @@ header {
 .specialb img {
   width: 120px;
   margin-bottom: 2rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .special_2b {
@@ -167,7 +202,7 @@ header {
 .specialc img {
   width: 120px;
   margin-bottom: 2rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .special_2c {
@@ -219,7 +254,6 @@ header {
 
 .about_us h3 {
   text-align: left;
-  margin-left: 2em;
 }
 
 .about_us img {
@@ -238,15 +272,18 @@ header {
 
 .youtube {
   margin: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.youtube iframe {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  width: 275px;
+.youtube_video {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.youtube_video iframe {
+  margin: 0 auto;
+  height: 157.5px;
+  width: 280px;
 }
 
 .backtotop {
@@ -256,7 +293,7 @@ header {
 }
 
 .backtotop a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: black;
 }
 
@@ -277,7 +314,7 @@ header {
 }
 
 .menu_grid {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .pizza_menu {
@@ -287,7 +324,7 @@ header {
   display: grid;
   -ms-grid-columns: 2fr 1fr 1fr 1fr;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      grid-template-areas: 'pizza sm med lg';
+      grid-template-areas: "pizza sm med lg";
   grid-gap: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -332,7 +369,7 @@ header {
   display: grid;
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
-      grid-template-areas: 'pasta_type pasta_price';
+      grid-template-areas: "pasta_type pasta_price";
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -362,7 +399,7 @@ header {
   display: grid;
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
-      grid-template-areas: 'sides_type sides_price';
+      grid-template-areas: "sides_type sides_price";
   grid-gap: 1rem;
   padding: 1rem;
   border: rgba(215, 4, 4, 0.9) 3px solid;
@@ -403,7 +440,7 @@ header {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: 'l_kids_menu r_kids_menu' 'b_kids_menu b_kids_menu';
+      grid-template-areas: "l_kids_menu r_kids_menu" "b_kids_menu b_kids_menu";
   grid-gap: 1rem;
   padding: 1rem;
   border: rgba(215, 4, 4, 0.9) 3px solid;
@@ -471,7 +508,7 @@ span p {
 
 .address {
   width: 270px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .address h3 {
@@ -480,16 +517,16 @@ span p {
 }
 
 .hours_grid {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: 'weekday hours';
+      grid-template-areas: "weekday hours";
 }
 
 .hours_grid p {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .weekday {
@@ -505,7 +542,7 @@ span p {
 }
 
 .exterior_img {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .exterior_img img {
@@ -519,37 +556,6 @@ span p {
   border: solid 4px rgba(215, 4, 4, 0.9);
 }
 
-p {
-  color: rgba(215, 4, 4, 0.9);
-  font-family: 'Raleway', sans-serif;
-}
-
-h3 {
-  color: rgba(215, 4, 4, 0.9);
-  text-shadow: rgba(181, 181, 181, 0.5);
-  font-family: 'Montserrat', sans-serif;
-}
-
-h2 {
-  color: rgba(215, 4, 4, 0.9);
-  text-shadow: rgba(181, 181, 181, 0.5);
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-  color: rgba(215, 4, 4, 0.9);
-  text-shadow: rgba(181, 181, 181, 0.5);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
-  margin-left: 1rem;
-}
-
-h4 {
-  color: rgba(215, 4, 4, 0.9);
-  text-shadow: rgba(181, 181, 181, 0.5);
-  font-family: 'Montserrat', sans-serif;
-}
-
 @media only screen and (min-width: 600px) {
   header {
     height: 200px;
@@ -559,7 +565,8 @@ h4 {
     margin-bottom: 0;
   }
   .logo img {
-    height: 250px;
+    height: 230px;
+    margin: 1rem;
   }
   .container {
     margin-top: 0;
@@ -573,7 +580,7 @@ h4 {
   }
   .navigation a {
     font-size: 35px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     color: white;
     text-decoration: none;
   }
@@ -582,13 +589,14 @@ h4 {
     font-size: 4rem;
     right: 40px;
     pointer-events: none;
+    text-decoration: none;
   }
   .maininfo {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 3, 1fr;
         grid-template-columns: 3, 1fr;
-        grid-template-areas: 'takeout dinein delivery';
+        grid-template-areas: "takeout dinein delivery";
     grid-gap: 1rem;
     padding-top: 0;
     margin-left: 10px;
@@ -614,13 +622,13 @@ h4 {
     display: grid;
     -ms-grid-columns: 2, 1fr;
         grid-template-columns: 2, 1fr;
-        grid-template-areas: 'promo reviews';
+        grid-template-areas: "promo reviews";
   }
   .weekly_promo {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: promo;
-    width: 80%;
+    width: 230px;
     margin: 3.33333vw;
     margin-right: 0;
   }
@@ -638,7 +646,7 @@ h4 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: reviews;
-    width: 80%;
+    width: 230px;
     margin: 3.33vw;
   }
   .about_us h3 {
@@ -653,19 +661,88 @@ h4 {
   .youtube h3 {
     font-size: 30px;
   }
-  .youtube iframe {
+  .youtube .youtube_video {
+    margin: 1rem;
+  }
+  .youtube .youtube_video iframe {
     height: 315px;
     width: 560px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  }
+  .location_grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2, 1fr;
+        grid-template-columns: 2, 1fr;
+        grid-template-areas: "address hours_grid" "eximage hours_grid" "googlemap googlemap";
+    grid-gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .address {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: address;
+    width: 300px;
+  }
+  .address h3 {
+    font-size: 1.5rem;
+  }
+  .address p {
+    margin-top: 2rem;
+  }
+  .address a {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .hours_grid {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: hours_grid;
+  }
+  .hours_grid p {
+    font-size: 24px;
+  }
+  .exterior_img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: eximage;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .exterior_img img {
+    width: 300px;
+  }
+  .googlemap {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: googlemap;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .googlemap iframe {
+    width: 600px;
+  }
+  h1 {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .weekly_promo {
+    width: 300px;
+  }
+  .reviews {
+    width: 300px;
   }
   .menu_grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 4, 1fr;
         grid-template-columns: 4, 1fr;
-        grid-template-areas: 'zamenu_tablet zamenu_tablet zamenu_tablet menu_photo_a' 'pamenu_tablet pamenu_tablet simenu_tablet simenu_tablet' 'kimenu_tablet kimenu_tablet menu_photo_b menu_photo_b';
+        grid-template-areas: "zamenu_tablet zamenu_tablet zamenu_tablet menu_photo_a" "pamenu_tablet pamenu_tablet simenu_tablet simenu_tablet" "kimenu_tablet kimenu_tablet menu_photo_b menu_photo_b";
     grid-gap: 1.5rem;
     margin: 3rem;
   }
@@ -714,69 +791,6 @@ h4 {
     height: 210px;
     margin-right: 0;
   }
-  .menu_photo_c {
-    display: none;
-  }
-  .location_grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2, 1fr;
-        grid-template-columns: 2, 1fr;
-        grid-template-areas: 'address hours_grid' 'eximage hours_grid' 'googlemap googlemap';
-    grid-gap: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .address {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: address;
-    width: 300px;
-  }
-  .address h3 {
-    font-size: 1.5rem;
-  }
-  .address p {
-    margin-top: 2rem;
-  }
-  .address a {
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .hours_grid {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    grid-area: hours_grid;
-  }
-  .hours_grid p {
-    font-size: 24px;
-  }
-  .exterior_img {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: eximage;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .exterior_img img {
-    width: 300px;
-  }
-  .googlemap {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: googlemap;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  .googlemap iframe {
-    width: 600px;
-  }
-  h1 {
-    padding-top: 1rem;
-  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -784,23 +798,24 @@ h4 {
     text-decoration: none;
   }
   .logo img {
-    height: 300px;
-    margin: 1rem;
+    height: 270px;
   }
   .navigation {
     word-spacing: 70px;
-    margin-right: 80px;
+    margin-right: 40px;
   }
   .navigation a {
     font-size: 50px;
   }
-  .youtube {
-    margin: 2rem;
+  .weekly_promo {
+    width: 400px;
   }
-  .youtube iframe {
-    margin-left: 10vw;
-    width: 900px;
+  .reviews {
+    width: 400px;
+  }
+  .youtube .youtube_video iframe {
     height: 550px;
+    width: 900px;
   }
   .pamenu_tablet {
     padding-left: 0;
@@ -817,7 +832,7 @@ h4 {
     display: grid;
     -ms-grid-columns: 2, 1fr;
         grid-template-columns: 2, 1fr;
-        grid-template-areas: 'address googlemap' 'hours_grid googlemap' 'eximage eximage';
+        grid-template-areas: "address googlemap" "hours_grid googlemap" "eximage eximage";
   }
   .address {
     width: 400px;
